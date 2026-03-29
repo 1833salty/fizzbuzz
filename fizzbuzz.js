@@ -1,16 +1,21 @@
-console.log("JS LOADED");
+// FizzBuzz JavaScript code
 
 for (let i = 1; i <= 20; i++) {
+    let output = "";
+
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log(i + " FizzBuzz");
+        output = i + " FizzBuzz";
     } 
     else if (i % 3 === 0) {
-        console.log(i + " Fizz");
+        output = i + " Fizz";
     } 
     else if (i % 5 === 0) {
-        console.log(i + " Buzz");
+        output = i + " Buzz";
     } 
     else {
-        console.log(i);
+        output = i;
     }
+
+    // Display output directly on the webpage
+    document.write(output + "<br>");
 }
